@@ -84,32 +84,32 @@ class SomeModelTest(TestCase):
     
 ```
 
-### How to run the test
+# How to run the test
 
 Tests are run from the command line. Activate your virtualenv before running.
 Note: Press ctrl + c to cancel
 
-# 1. Run all tests
+### 1. Run all tests
 ```commandline
 python3 manage.py test
 ```
 
-# 2. Run all tests for an app
+### 2. Run all tests for an app
 ```commandline
 python3 manage.py test app_name
 ```
 
-# 3. Run all model tests for an app
+### 3. Run all model tests for an app
 ```commandline
 python3 manage.py test app_name.test.test_models
 ```
 
-# 4. Run all tests for a specific model of an app
+### 4. Run all tests for a specific model of an app
 ```commandline
 python3 manage.py test app_name.test.test_models.BlogModelTest
 ```
 
-# 5. Run a specific test for a specific model of an app
+### 5. Run a specific test for a specific model of an app
 ```commandline
 python3 manage.py test app_name.test.test_models.BlogModelTest.test_save_and_retrieve
 ```
