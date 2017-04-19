@@ -7,7 +7,7 @@ There are generally three phases in a test:
 3. Verification - Check if the code performed as expected
 4. Clean up - Remove any artifacts created by the test
 
-###Test Driven Development
+### Test Driven Development
 1. Add a new test
 2. Run all tests and check the new test fails for the expected reason.  
 Gives confidence in the new test 

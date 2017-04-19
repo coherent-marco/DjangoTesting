@@ -1,4 +1,4 @@
-###Project Setup
+### Project Setup
 
 1. Clone the project from GitHub  
 ```
