@@ -1,7 +1,7 @@
 Testing Guidelines
 ==================
 
-There are generally three phases in a test:   
+There are generally 4 phases in a test:   
 1. Setup - Create the test conditions
 2. Testing - Run the code you want to test 
 3. Verification - Check if the code performed as expected
@@ -82,4 +82,34 @@ class SomeModelTest(TestCase):
             # 2. Perform the logic
             calc.divide(12, 0)    
     
+```
+
+### How to run the test
+
+Tests are run from the command line. Activate your virtualenv before running.
+Note: Press ctrl + c to cancel
+
+# 1. Run all tests
+```commandline
+python3 manage.py test
+```
+
+# 2. Run all tests for an app
+```commandline
+python3 manage.py test app_name
+```
+
+# 3. Run all model tests for an app
+```commandline
+python3 manage.py test app_name.test.test_models
+```
+
+# 4. Run all tests for a specific model of an app
+```commandline
+python3 manage.py test app_name.test.test_models.BlogModelTest
+```
+
+# 5. Run a specific test for a specific model of an app
+```commandline
+python3 manage.py test app_name.test.test_models.BlogModelTest.test_save_and_retrieve
 ```

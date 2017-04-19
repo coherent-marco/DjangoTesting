@@ -6,14 +6,15 @@
 ```
 2. Install and setup MySQL database locally  
 Download [MySQL Community Server](https://dev.mysql.com/downloads/mysql/).  
-You may optionally also download [Workbench](https://dev.mysql.com/downloads/workbench/) to visualise the database.
-Create a database and remember the username and password for later
+You may optionally also download [Workbench](https://dev.mysql.com/downloads/workbench/) to visualise the database.  
+During installation, it will ask you for a `root` password - don't use this user in your apps.  
+Instead, create a user with the admin permissions. Remember the username and password for later.
 
 4. Set up `virtualenv`  
 `virtualenv` provides Python package isolation.  
 This is critical when running multiple projects which may need different versions of the same library.  
 Also is useful for testing new packages, eg to see if a newer version of Django works with your app.  
-```
+```commandline
     virtualenv --python3=python3.exe ~/virtualenv/env_dj_testing
     source ~/virtualenv/env_dj_testing/Scripts/activate
 ```
