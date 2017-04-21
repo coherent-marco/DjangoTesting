@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'product',
+    'products',
+    'utils',
 ]
 
 MIDDLEWARE = [
@@ -78,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'demo_django',
-        'USER': 'django',
-        'PASSWORD': 'django_app',
+        'USER': 'djangotesting',
+        'PASSWORD': 'django_testing_2017',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
