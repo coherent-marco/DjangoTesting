@@ -74,6 +74,7 @@ WSGI_APPLICATION = 'dj_testing.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -81,6 +82,17 @@ DATABASES = {
         'USER': 'django',
         'PASSWORD': 'django_app',
         'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
+}
+'''
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dj_testing',
+        'USER': 'root',
+        'PASSWORD': 'root1234',
+        'HOST': 'seasonal-life.c0dsfptayfgv.ap-northeast-1.rds.amazonaws.com',
         'PORT': '3306',
     }
 }

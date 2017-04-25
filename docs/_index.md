@@ -10,6 +10,8 @@ insurance product.
 ### Table of Contents
 + [Setup](setup.md) - Project and database setup
 + [Test Guidelines](test_guidelines.md) - Read this before doing the test exercises
-+ [Testing your views](test_views.md) - Coming soon!
-+ [Testing your models](test_models.md) - Coming soon!
-+ [Mocking your tests](mocks.md) - Coming soon!
++ [Functional tests](test_functional.md)
++ [Testing your views](test_views.md)  
++ [Testing your forms](test_forms.md)
++ [Testing your models](test_models.md) 
++ [Mocking your tests] - Coming soon!

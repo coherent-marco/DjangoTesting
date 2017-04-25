@@ -1,5 +1,5 @@
 Model Testing
-=============
+============= 
 
 For _model_ tests, the focus is on data integrity and any features your object should implement.  
 As a __minimum__, you should test the object is saved correctly and that the string representation works.
@@ -23,6 +23,7 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase
 
 from app.models import Blog
+
 
 class BlogTest(TestCase):
     def setUp(self):
