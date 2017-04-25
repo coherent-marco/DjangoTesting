@@ -36,7 +36,7 @@ class SearchFormTest(TestCase):
         )
 ```
 
-An basic sample test showing a `ModelForm` validation:
+An basic sample test showing a `ModelForm` validation and model creation:
 ```python
 from django.test import TestCase
 

@@ -1,0 +1,39 @@
+1493098471103	geckodriver	INFO	Listening on 127.0.0.1:12304
+1493098473761	mozprofile::profile	INFO	Using profile path C:\Users\Marco\AppData\Local\Temp\rust_mozprofile.BtNXEChylhnC
+1493098473772	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1493098473873	geckodriver::marionette	INFO	Connecting to Marionette on localhost:12312
+1493098479469	Marionette	INFO	Listening on port 12312
+1493098484631	Marionette	WARN	TLS certificate errors will be ignored for this session
+1493098503290	Marionette	INFO	New connections will no longer be accepted
+[Child 13620] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2143
+1493102618122	geckodriver	INFO	Listening on 127.0.0.1:15810
+1493102620080	mozprofile::profile	INFO	Using profile path C:\Users\Marco\AppData\Local\Temp\rust_mozprofile.Acl540TauJpB
+1493102620088	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1493102620097	geckodriver::marionette	INFO	Connecting to Marionette on localhost:15816
+1493102622269	Marionette	INFO	Listening on port 15816
+1493102624328	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+1493102636666	Marionette	INFO	New connections will no longer be accepted
+[Child 13740] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2143
+1493102734060	geckodriver	INFO	Listening on 127.0.0.1:15945
+1493102736052	mozprofile::profile	INFO	Using profile path C:\Users\Marco\AppData\Local\Temp\rust_mozprofile.JsLPD46AMMyC
+1493102736062	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1493102736071	geckodriver::marionette	INFO	Connecting to Marionette on localhost:15951
+1493102737854	Marionette	INFO	Listening on port 15951
+1493102738407	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+1493102747752	Marionette	INFO	New connections will no longer be accepted
+[Child 4752] WARNING: pipe error: 232: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 512
+[Child 4752] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2143
+1493102887093	geckodriver	INFO	Listening on 127.0.0.1:16022
+1493102889067	mozprofile::profile	INFO	Using profile path C:\Users\Marco\AppData\Local\Temp\rust_mozprofile.ad6XmZHUmBvD
+1493102889077	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1493102889152	geckodriver::marionette	INFO	Connecting to Marionette on localhost:16029
+1493102892340	Marionette	INFO	Listening on port 16029
+1493102894062	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+1493102898288	Marionette	INFO	New connections will no longer be accepted
+[Child 11148] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2143

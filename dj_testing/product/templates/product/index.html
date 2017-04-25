@@ -1,19 +1,22 @@
 {% extends 'base.html' %}
 
-{% block body %}
+{% block body_content %}
     <div class="jumbotron">
         <div class="container">
             <p>Product Search</p>
-            <form class="form-horizontal">
+            <form class="form-horizontal" action="{% url 'product:search' %}">
                 <fieldset>
+                    {% for field in form %}
                     <div class="form-group">
-                        <label fo="inputSearch" class="col-lg-2 control-label">Search</label>
-                        <div class="col-lg-10">
-                            <input type="text" class="form-control" id="inputSearch">
-                        </div>
+                        {{ field.label_tag }} {{ field }}
                     </div>
+                    {% endfor %}
                 </fieldset>
+                {% csrf_token %}
             </form>
         </div>
+    </div>
+    <div class="col-lg-12 has-error">
+
     </div>
 {% endblock %}}

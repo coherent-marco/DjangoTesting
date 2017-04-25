@@ -25,7 +25,7 @@ class FunctionalTest(StaticLiveServerTestCase):
         return function_with_assertion()
 
     def get_item_input_box(self):
-        return self.browser.find_element_by_id('search-input')
+        return self.browser.find_element_by_id('input-search')
 
     def get_error_element(self):
         return self.browser.find_element_by_css_selector('.has-error')

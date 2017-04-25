@@ -4,17 +4,20 @@ from functional_tests.FunctionalTest import FunctionalTest
 
 
 class SearchProductTest(FunctionalTest):
+    # User story based on business requirements
     def test_search_products(self):
         # User visits website
+        # This is the first test that fails and drives the View's unit tests
         self.browser.get(self.live_server_url + reverse('product:search'))
 
         # User accidentally submits an empty query
         # They hit Enter on the empty input box
+        # This test also drives the view and form unit tests
         self.get_item_input_box().send_keys('\n')
 
         # The page refreshes and there is an error message saying search cannot be blank
         error = self.get_error_element()
-        self.assertEqual(error.text, 'Please enter text to search by')
+        self.assertEqual(error.text, 'This field is required.')
 
         # User tries again with some random text this time, which now works
         # The page refreshes and tells them the there are no products matching that name
