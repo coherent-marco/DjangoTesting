@@ -4,7 +4,8 @@ View Testing
 Django Views decide _what_ data is presented to the user.  
 _How_ the data looks is __not__ part of the view's concerns.   
 
-Essentially, a URL maps to a Python function that describes which data is presented.  
+Essentially, a URL maps to a Python function that describes which data is presented.
+As a __minimum__, you should test the URL renders your expected template/resolves to your expected view.  
 
 A sample view test may be like this:  
 _Core tests_
@@ -13,10 +14,12 @@ _Core tests_
 
 _Logic tests_  
 + Test if the view passes the correct data to the template to render
++ Test how error messages are shown
 + If handling user input:
     + Test if the user can/cannot create, update or delete an object
-    + Test how error messages are shown
     + Test that your view uses the form for input validation
+    _Note_: input validation isn't handled by the view directly
+
 
 An example basic test:
 ```python
