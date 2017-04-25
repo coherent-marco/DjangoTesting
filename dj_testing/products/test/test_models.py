@@ -70,17 +70,25 @@ class TermProductTest(TestCase):
         self.assertEqual(first_term_product.premium_term_parameter, 85)
         self.assertEqual(first_term_product.level_premium, True)
         self.assertEqual(first_term_product.coverage_term_type, 'fixed_term')
-        self.assertEqual(first_term_product.coverage_term, 10)
+        self.assertEqual(first_term_product.coverage_term_parameter, 10)
         self.assertAlmostEqual(first_term_product.death_benefit_percentage, 1.0)
         self.assertEqual(first_term_product.sum_assured_pattern, 'level')
 
     def test_premium_term(self):
         term_product = TermProduct.objects.create(**self.term_product_entry)
         term_product.premium_term_type = 'to_age'
-        term_product.premium_term_parameter = 85
+        term_product.premium_term_parameter = 65
         term_product.insured = Insured(age=30, gender=True, smoking_status=False)
 
-        self.assertEqual(term_product.premium_term, 55, 'Premium term is %s' % term_product.premium_term)
+        self.assertEqual(term_product.premium_term, 35, 'Premium term is %s' % term_product.premium_term)
+
+    def test_coverage_term(self):
+        term_product = TermProduct.objects.create(**self.term_product_entry)
+        term_product.coverage_term_type = 'to_age'
+        term_product.coverage_term_parameter = 85
+        term_product.insured = Insured(age=30, gender=True, smoking_status=False)
+
+        self.assertEqual(term_product.coverage_term, 55, 'Coverage term is %s' % term_product.coverage_term)
 
     def test_issue_age_from_less_than_issue_age_to(self):
         term_product = TermProduct.objects.create(**self.term_product_entry)
