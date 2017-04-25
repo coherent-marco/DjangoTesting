@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'product',
+    'products',
 ]
 
 MIDDLEWARE = [
@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'dj_testing.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'demo_django',
-        'USER': 'django',
-        'PASSWORD': 'django_app',
+        'NAME': 'dj_testing',
+        'USER': 'jackl',
+        'PASSWORD': 'P@ssw0rd',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
